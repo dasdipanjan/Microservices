@@ -1,11 +1,12 @@
 # Spring Boot Demo
 
+---
 
 This application demonstrate how can we quickly build restful webservice using **SpringBoot** . Following have been implemented in this application.
 
-1. Basic Restful webservice using User model. For Reference go through HomeController.java and User.java file.
+1. Basic Restful webservice using User model. For Reference go through [HomeController.java](https://github.com/dasdipanjan/Microservices/blob/main/spring-boot-demo/src/main/java/com/dailycodebuffer/springbootdemo/controller/HomeController.java) and [User.java](https://github.com/dasdipanjan/Microservices/blob/main/spring-boot-demo/src/main/java/com/dailycodebuffer/springbootdemo/model/User.java) file.
 2. Implementation of **@RequestMapping**, **@GetMapping, @PathVariable,**  **@RequestParam** annotation.
-3. Basic **CRUD** operation is implemented by taken Employee as an example. For Reference go through EmployeeController.java and Employee.java
+3. Basic **CRUD** operation is implemented by taken Employee as an example. For Reference go through [EmployeeController.java]() and [Employee.java](https://github.com/dasdipanjan/Microservices/blob/main/spring-boot-demo/src/main/java/com/dailycodebuffer/springbootdemo/model/Employee.java)
 4. **POST** method implementation to create Employee resource.
 5. **GET** method implementation for Employee resource.
 6. **GET** method implementation for Employee resource by employee id.
@@ -16,10 +17,9 @@ This application demonstrate how can we quickly build restful webservice using *
 11. Data filtering in restful webservice using **@JsonIgnore** or **@JsonIgnoreProperties**
 12. Rest API Versioning.
 
-
-
 # Content Negotiation
 
+---
 
 Content Negotiation is one good example of AOP in Spring Framework. Any method in rest controller can return response in form of JSON or XML or Html or some other type. But it may happen that we need the same method to return a response of different type depending on incoming request.
 
@@ -28,17 +28,13 @@ For example we have a Server application which return the list of employees. We 
 This content negotiation can be achieved in following ways-
 
 - **Using Path Extension -** In the request we specify the required response type using the extension like .json,.xml or .txt. This has the highest preference.
-
 - **Using url parameter -** In the request we specify the required response type using the url parameter like format=xml or format=json. This has the second highest preference.
-
 - **Using Accept Headers -** When making a request using HTTP we specify required response by setting the Accept header property. Its something like this
 
   ```java
   HttpHeaders headers = new HttpHeaders();
   headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
   ```
-
-
 
 #### Example of Content Negotiation using URL Parameter
 
