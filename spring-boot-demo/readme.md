@@ -1,6 +1,5 @@
 # Spring Boot Demo
 
-------
 
 This application demonstrate how can we quickly build restful webservice using **SpringBoot** . Following have been implemented in this application.
 
@@ -21,7 +20,6 @@ This application demonstrate how can we quickly build restful webservice using *
 
 # Content Negotiation
 
----
 
 Content Negotiation is one good example of AOP in Spring Framework. Any method in rest controller can return response in form of JSON or XML or Html or some other type. But it may happen that we need the same method to return a response of different type depending on incoming request.
 
